@@ -1,5 +1,5 @@
 CHANGELOG
 ==========
-## 0.1.0 - 2015-10-24
+## 0.1.0 - 08-11-2015
 ### Added
 - Scaffold the project
