@@ -15,14 +15,6 @@ test:
         environment:
             PATH: "$(npm bin):$PATH"
 
-deployment:
-    production:
-        branch: master
-        commands:
-            - grunt default:
-                environment:
-                    PATH: "$(npm bin):$PATH"
-
 general:
     artifacts:
         - coverage
