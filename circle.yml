@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 0.12.7
+
+dependencies:
+    override:
+        - npm install
+        - bower install:
+            environment:
+                PATH: "$(npm bin):$PATH"
+
+test:
+  override:
+    - grunt test:
+        environment:
+            PATH: "$(npm bin):$PATH"
+
+general:
+    artifacts:
+        - coverage
