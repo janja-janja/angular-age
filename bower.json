@@ -1,0 +1,37 @@
+{
+  "name": "yoda-face",
+  "version": "0.1.0",
+  "description": "A face for my personal site",
+  "authors": [
+    "@yoda-yoda"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "yoda",
+    "master",
+    "yoda-face"
+  ],
+  "homepage": "https://github.com/yoda-yoda/yoda-face",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.4.7",
+    "js-data-angular-mocks": "~3.1.0"
+  },
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-bootstrap": "~0.13.4",
+    "angular-motion": "~0.4.3",
+    "angular-resource": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0"
+  }
+}
