@@ -69,7 +69,6 @@ module.exports = {
      */
     vendor_files: {
         js: [
-            "vendor/jquery/dist/jquery.js",
             "vendor/angular/angular.js"
         ],
         css: [

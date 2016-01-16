@@ -16,7 +16,6 @@
     "eqnull": true,
     "quotmark": true,
     "globals": {
-        "jQuery": true,
         "angular": true,
         "beforeEach": true,
         "xdescribe": true,
