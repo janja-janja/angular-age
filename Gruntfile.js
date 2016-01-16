@@ -47,7 +47,7 @@ module.exports = function ( grunt ) {
             banner:
                 "/*!Version <%= pkg.version %> \n" +
                 " * Generated <%= grunt.template.today('yyyy-mm-dd') %>\n" +
-                " * Copyright Deebeat City\n" +
+                " * Karanja and Daughters\n" +
                 " */"
         },
 

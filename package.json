@@ -1,18 +1,19 @@
 {
   "author": "@yoda-yoda",
-  "name": "yoda-face",
-  "version": "0.1.0",
-  "description": "A face for my personal site",
-  "homepage": "https://github.com/yoda-yoda/yoda-face",
-  "bugs": "https://github.com/yoda-yoda/yoda-face/issues",
+  "name": "angular-age",
+  "version": "0.0.1",
+  "description": "A Date of Birth to Age converter",
+  "homepage": "https://github.com/yoda-yoda/angular-age",
+  "bugs": "https://github.com/yoda-yoda/angular-age/issues",
   "repository": {
     "type": "git",
-    "url": "git@yoda:yoda-yoda/yoda-face.git"
+    "url": "git@yoda:yoda-yoda/angular-age.git"
   },
   "keywords": [
-    "yoda",
-    "master",
-    "yoda-face"
+    "angular-age",
+    "angular age converter",
+    "date of birth to age converter",
+    "angular age directive"
   ],
   "license": "MIT",
   "devDependencies": {

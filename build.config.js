@@ -70,25 +70,11 @@ module.exports = {
     vendor_files: {
         js: [
             "vendor/jquery/dist/jquery.js",
-            "vendor/angular/angular.js",
-            "vendor/bootstrap/dist/js/bootstrap.js",
-            "vendor/angular-resource/angular-resource.js",
-            "vendor/angular-animate/angular-animate.js",
-            "vendor/angular-ui-router/release/angular-ui-router.js",
-            "vendor/angular-bootstrap/ui-bootstrap.js",
-            "vendor/angular-bootstrap/ui-bootstrap-tpls.js"
+            "vendor/angular/angular.js"
         ],
         css: [
         ],
-        assets: {
-            fontawesome: "vendor/fontawesome/fonts/*",
-            glyphicons: "vendor/bootstrap/fonts/*",
-            css:[
-            ],
-            imgs: [
-                "src/assets/img/*"
-            ]
-        }
+        assets: {}
     },
 
     connect : {

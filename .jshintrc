@@ -33,7 +33,6 @@
         "by": true,
         "module":true,
         "window": true,
-        "moment": true,
         "_": true,
         "spyOn":true,
         "is": true,
