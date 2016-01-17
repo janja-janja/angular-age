@@ -25,6 +25,9 @@ angular
         *   This function calculates the age of a thing given it's
         *   inception date [date of birth in case of mammals :)]
         *   and return a more human comprehendable value(the age)
+        *
+        *   @params -> startDate : String, (DD-MM-YYYY) [mandatory]
+        *           -> endDate : String, (DD-MM-YYYY) [optional]
         */
 
         // If end date is give, use it, otherwise make a new date(current date)
@@ -51,7 +54,6 @@ angular
         // the day(s) in the two periods.
         day = [endDate.getDate(), startDate.getDate()],
         dayDiff = day[0] - day[1];
-
 
         if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
             --yearDiff;
@@ -95,27 +97,20 @@ angular
 
 }])
 
-.controller("angular-age.get_age", ["$scope", "angular-age.human_age",
-    function ($scope, age) {
-        $scope.age = age.humanAge($scope.date_of_birth);
-    }
-])
-
 .directive("angularAge", ["$injector", "angular-age.human_age",
     function ($injector, ageService) {
         return {
             restrict: "E",
             replace: true,
-            templateUrl: "<span>{{humanAge}}</span>",
+            template: "<span>{{humanAge}}</span>",
             scope: {
-                startDate: "@start_date",
-                endDate: "@end_date"
+                startdate: "@startdate",
+                enddate: "@enddate"
             },
             link: function (scope) {
-                var humanAgeService = $injector.get(ageService);
-                var startDate = scope.startDate;
-                var endDate = scope.endDate;
-                scope.humanAge = humanAgeService.humanAge(startDate, endDate);
+                var startdate = scope.startdate;
+                var enddate = scope.enddate;
+                scope.humanAge = ageService.humanAge(startdate, enddate);
             }
         };
     }
