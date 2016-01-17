@@ -101,8 +101,8 @@ angular
     function ($injector, ageService) {
         return {
             restrict: "E",
+            template: "{{humanAge}}",
             replace: true,
-            template: "<span>{{humanAge}}</span>",
             scope: {
                 startdate: "@startdate",
                 enddate: "@enddate"
