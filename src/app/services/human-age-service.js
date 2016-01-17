@@ -2,17 +2,7 @@
 
 angular
 
-.module("angular-age", [
-    //  3rd party
-    "ui.router",
-    "templates-app",
-    "templates-common",
-
-    // my apps
-    "yoda.common",
-    "yoda.routes",
-    "yoda.config"
-])
+.module("angular-age.services.human_age", [])
 
 .service("angular-age.human_age", [function () {
     /*
@@ -95,23 +85,4 @@ angular
         humanAge: findAge
     };
 
-}])
-
-.directive("angularAge", ["$injector", "angular-age.human_age",
-    function ($injector, ageService) {
-        return {
-            restrict: "E",
-            template: "{{humanAge}}",
-            replace: true,
-            scope: {
-                startdate: "@startdate",
-                enddate: "@enddate"
-            },
-            link: function (scope) {
-                var startdate = scope.startdate;
-                var enddate = scope.enddate;
-                scope.humanAge = ageService.humanAge(startdate, enddate);
-            }
-        };
-    }
-]);
+}]);
