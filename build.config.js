@@ -44,8 +44,7 @@ module.exports = {
      */
     test_files: {
         js: [
-            "vendor/angular-mocks/angular-mocks.js",
-            "vendor/js-data-angular-mocks/dist/js-data-angular-mocks.js"
+            "vendor/angular-mocks/angular-mocks.js"
         ]
     },
 
@@ -69,11 +68,11 @@ module.exports = {
      */
     vendor_files: {
         js: [
-            "vendor/angular/angular.js"
+            "vendor/angular/angular.js",
+            "vendor/angular-ui-router/release/angular-ui-router.js"
         ],
         css: [
-        ],
-        assets: {}
+        ]
     },
 
     connect : {

@@ -45,9 +45,9 @@ module.exports = function ( grunt ) {
          */
         meta: {
             banner:
-                "/*!Version <%= pkg.version %> \n" +
+                "/* Angular Age version <%= pkg.version %> \n" +
                 " * Generated <%= grunt.template.today('yyyy-mm-dd') %>\n" +
-                " * Karanja and Daughters\n" +
+                " * Karanja Denis, Inc\n" +
                 " */"
         },
 
@@ -109,30 +109,7 @@ module.exports = function ( grunt ) {
                 ]
             },
             build_vendor_assets: {
-                files: [
-                    {
-                        src: [ "<%= vendor_files.assets.fontawesome %>" ],
-                        dest: "<%= build_dir %>/assets/fonts/",
-                        cwd: ".",
-                        expand: true,
-                        flatten: true
-                    },
-                    {
-                        src: [ "<%= vendor_files.assets.glyphicons %>" ],
-                        dest: "<%= build_dir %>/assets/fonts/",
-                        cwd: ".",
-                        expand: true,
-                        flatten: true
-                    },
-                    {
-                        src: [ "<%= vendor_files.assets.css %>" ],
-                        dest: "<%= build_dir %>/assets/css/",
-                        cwd: ".",
-                        expand: true,
-                        flatten: true
-                    }
-
-                ]
+                files: []
             },
             build_app_settings:{
                 files: [
