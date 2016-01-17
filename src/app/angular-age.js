@@ -106,8 +106,17 @@ angular
         return {
             restrict: "E",
             replace: true,
-            template: "tpls/angular-age.tpl.html",
-            scope: true
+            templateUrl: "<span>{{humanAge}}</span>",
+            scope: {
+                startDate: "@start_date",
+                endDate: "@end_date"
+            },
+            link: function (scope) {
+                var humanAgeService = $injector.get(ageService);
+                var startDate = scope.startDate;
+                var endDate = scope.endDate;
+                scope.humanAge = humanAgeService.humanAge(startDate, endDate);
+            }
         };
     }
 ]);
